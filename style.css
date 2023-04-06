@@ -1,0 +1,147 @@
+
+.icon{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 10px;
+    
+}
+
+body{
+    margin-top: 0px;
+    background-color: rgb(47, 47, 47);
+}
+
+.container {
+    background: linear-gradient(#324866, #325cb5);
+    height: 100vh;
+    width: 87.5%;
+    margin-left: 5.8%;
+    
+    position: absolute;
+    
+}
+
+.main-menu-header{
+    background: linear-gradient(#223c72,#314664 );
+    margin-top: 30px;
+    height: 130px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 96%;
+    z-index: 9;
+    box-shadow: 0px 0px 15px 1px #00000038;
+    position: relative;
+}
+/*Search Bar*/
+.search-bar{
+    padding-left: 20px;
+    position: relative;
+    left: 80%;
+    bottom: 25px;
+}
+
+.search-input{
+    position: relative;
+
+    padding-top: 3px;
+    padding-left: 10px;
+
+    font-size: 17px;
+    border: solid;
+    color: white;
+    border-color: #60ba01;
+    background-color: transparent;
+
+    border-width: 2px;
+    border-radius: 6px;
+
+    height: 22px;
+    width: 16.1%;
+    
+    bottom: 40px;
+}
+.search-input::selection{
+    background: #60ba01;
+}
+.search-input:focus{
+    outline: none;
+}
+
+.search-bar img{
+    position: relative;
+    bottom: 37px;
+    right: 40px;
+    width: 15px;
+    height: 15px;
+}
+
+.search-input::placeholder{
+    color: white;
+    font-size: 17px;
+
+}
+/*header button style settings*/
+.home-button, .new-discord-button, .games-button, .movies-button{
+    position: relative;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+
+    padding-left: 13px;
+    padding-right: 13px;
+
+    height: 130px;
+    min-width: 80px;
+    border: none;
+    border-radius: 10px;
+    
+    background: linear-gradient(#223c72,#314664 );
+    color: #2a8cdb;
+}
+/*header button position settings*/
+
+.games-dropdown, .home-button, .new-discord-button, .movies-button{
+    position: relative;
+    display: inline-block;
+    bottom: 145px;
+    left: 375px;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background:linear-gradient(#213b73, #314665);
+
+    border-top-style: inset;
+    border-top-color: #96ff1d;
+
+    width: 230px;
+    height: 215px;
+
+}
+
+.dropdown-content a{ 
+    padding-left: 25px;
+    padding-top: 15px;
+    color: #3498db;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    display: block;
+}
+.dropdown-content a:hover{
+    color: #6dcc00;
+}
+.games-dropdown:hover .games-button{
+    background: linear-gradient(#69c501, #3a8402);
+    color:white;
+}
+
+.games-dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.home-button:hover, .new-discord-button:hover, .games-button:hover, .movies-button:hover{
+    background: linear-gradient(#69c501, #3a8402);
+    cursor: pointer;
+    color: white;
+}
